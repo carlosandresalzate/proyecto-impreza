@@ -10,7 +10,8 @@ plantilla empresarial
 * sass ✅
 * postcss ✅
 
-Nota: no todas las dependencias están en uso.
+> [!nota]
+> no todas las dependencias están en uso.
 
 ## Recursos.
 
