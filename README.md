@@ -10,7 +10,7 @@ plantilla empresarial
 * sass ✅
 * postcss ✅
 
-> [!nota]
+> [!NOTE]
 >
 > no todas las dependencias están en uso.
 
