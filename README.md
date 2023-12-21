@@ -11,6 +11,7 @@ plantilla empresarial
 * postcss ✅
 
 > [!nota]
+>
 > no todas las dependencias están en uso.
 
 ## Recursos.
