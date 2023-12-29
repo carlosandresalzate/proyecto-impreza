@@ -12,7 +12,6 @@
             crossorigin="anonymous"></script> -->
         <script src="https://kit.fontawesome.com/6a7144386f.js" crossorigin="anonymous"></script>
         <title><%= htmlWebpackPlugin.options.title %></title>
-
     </head>
 
     <body>
@@ -23,11 +22,19 @@
                 <div class="d-flex text-body-tertiary">
                     <div class="px-2">
                         <span class="fas fa-phone-alt pe-1"></span>
-                        <a class="text-body-tertiary link-underline link-underline-opacity-0 small" href="tel:+3211234567">+3211234567</a>
+                        <a
+                            class="text-body-tertiary link-underline link-underline-opacity-0 small"
+                            href="tel:+3211234567"
+                            >+3211234567</a
+                        >
                     </div>
                     <div class="px-2">
                         <span class="fas fa-envelope pe-1"></span>
-                        <a class="text-body-tertiary link-underline link-underline-opacity-0 small" href="mailto:info@example.com">info@example.com</a>
+                        <a
+                            class="text-body-tertiary link-underline link-underline-opacity-0 small"
+                            href="mailto:info@example.com"
+                            >info@example.com</a
+                        >
                     </div>
                 </div>
                 <!-- fin - derecha -->
@@ -46,17 +53,41 @@
         <!-- Fin - header -->
         <!-- === -->
         <!-- inicio - barra de navegación -->
-        <nav>
-            <div class="logo">
-                <span><b>IM</b>PREZA</span>
-            </div>
-            <div>
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Service</a>
-                <a href="#">Pricing</a>
-                <a href="#">Contact</a>
-                <a href="#"><span class="fas fa-search"></span></a>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid py-2">
+                <a class="navbar-brand px-2" style="font-size: 38px;" href="./index.html"><b>IM</b>PREZA</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active text-body-tertiary">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body-tertiary">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body-tertiary">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body-tertiary">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body-tertiary">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body-tertiary"><span class="fas fa-search"></span></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <!-- fin - barra de navegación -->
