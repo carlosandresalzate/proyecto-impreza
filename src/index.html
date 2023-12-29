@@ -12,34 +12,36 @@
             crossorigin="anonymous"></script> -->
         <script src="https://kit.fontawesome.com/6a7144386f.js" crossorigin="anonymous"></script>
         <title><%= htmlWebpackPlugin.options.title %></title>
-        
+
     </head>
 
     <body>
         <!-- inicio - header -->
-        <header>
-            <!-- inicio - derecha -->
-            <div>
-                <div>
-                    <span class="fas fa-phone-alt"></span>
-                    <a href="tel:+3211234567">+3211234567</a>
+        <header class="bg-light py-2">
+            <div class="container-fluid d-flex justify-content-between">
+                <!-- inicio - derecha -->
+                <div class="d-flex text-body-tertiary">
+                    <div class="px-2">
+                        <span class="fas fa-phone-alt pe-1"></span>
+                        <a class="text-body-tertiary link-underline link-underline-opacity-0 small" href="tel:+3211234567">+3211234567</a>
+                    </div>
+                    <div class="px-2">
+                        <span class="fas fa-envelope pe-1"></span>
+                        <a class="text-body-tertiary link-underline link-underline-opacity-0 small" href="mailto:info@example.com">info@example.com</a>
+                    </div>
                 </div>
-                <div>
-                    <span class="fas fa-envelope"></span>
-                    <a href="mailto:info@example.com">info@example.com</a>
+                <!-- fin - derecha -->
+                <!-- inicio - izquierda -->
+                <div class="justify-content-end text-body-tertiary">
+                    <span class="fab fa-facebook-f px-2"></span>
+                    <span class="fab fa-twitter px-2"></span>
+                    <span class="fab fa-google-plus-g px-2"></span>
+                    <span class="fab fa-linkedin-in px-2"></span>
+                    <span class="fab fa-youtube px-2"></span>
+                    <span class="fab fa-dribbble px-2"></span>
                 </div>
+                <!-- Fin - izquierda -->
             </div>
-            <!-- fin - derecha -->
-            <!-- inicio - izquierda -->
-            <div>
-                <span class="fab fa-facebook-f"></span>
-                <span class="fab fa-twitter"></span>
-                <span class="fab fa-google-plus-g"></span>
-                <span class="fab fa-linkedin-in"></span>
-                <span class="fab fa-youtube"></span>
-                <span class="fab fa-dribbble"></span>
-            </div>
-            <!-- Fin - izquierda -->
         </header>
         <!-- Fin - header -->
         <!-- === -->
