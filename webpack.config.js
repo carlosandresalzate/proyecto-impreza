@@ -7,9 +7,12 @@ const miniCSSExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
     mode: 'development',
-    entry: './src/js/main.js',
+    entry: {
+        main: './src/js/main.js',
+        script: './src/js/script.js',
+    },
     output: {
-        filename: 'main.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true
     },
@@ -31,7 +34,7 @@ module.exports = {
          }),
          new miniCSSExtractPlugin({
             linkType: "text/css",
-            filename: "style.css"
+            filename: "bootstrap_v5.3.2.css"
          }),
     ],
     module: {
