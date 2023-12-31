@@ -14,7 +14,7 @@
         <title><%= htmlWebpackPlugin.options.title %></title>
         <style>
             /* #hero { */
-                /* background-image: url(https://via.placeholder.com/1200x600); */
+            /* background-image: url(https://via.placeholder.com/1200x600); */
             /* } */
         </style>
     </head>
@@ -60,7 +60,7 @@
         <!-- inicio - barra de navegación -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid py-2">
-                <a class="navbar-brand px-2" style="font-size: 38px;" href="./index.html"><b>IM</b>PREZA</a>
+                <a class="navbar-brand px-2" style="font-size: 38px" href="./index.html"><b>IM</b>PREZA</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -72,7 +72,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav ">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active text-body-tertiary">Home</a>
                         </li>
@@ -91,8 +91,15 @@
                     </ul>
                     <form class="" role="search">
                         <div class="input-group">
-                            <input type="text" class="form-control d-none border-0 " id="search" placeholder="Search" aria-label="Search">
-                            <span class="input-group-text border-0 bg-transparent" style="cursor: pointer;"><span class="fas fa-search text-body-tertiary" id="icon"></span></span>
+                            <input
+                                type="text"
+                                class="form-control d-none border-0"
+                                id="search"
+                                placeholder="Search"
+                                aria-label="Search" />
+                            <span class="input-group-text border-0 bg-transparent" style="cursor: pointer"
+                                ><span class="fas fa-search text-body-tertiary" id="icon"></span
+                            ></span>
                         </div>
                     </form>
                 </div>
@@ -102,8 +109,10 @@
         <!-- === -->
         <!-- inicio - hero section -->
         <section id="hero">
-            <div class="position-relative container-fluid text-center" id="hero-img" style="height: 600px; width: 100%;">
-                <h1 class="position-absolute top-50 start-50 translate-middle text-light" style="text-shadow: 1px 1px 1px #000;">
+            <div class="position-relative container-fluid text-center" id="hero-img" style="height: 600px; width: 100%">
+                <h1
+                    class="position-absolute top-50 start-50 translate-middle text-light"
+                    style="text-shadow: 1px 1px 1px #000">
                     Perfect Premium Template <br />
                     <span class="display-1">For Showing Your Products</span>
                 </h1>
@@ -113,39 +122,41 @@
         <!-- fin - hero section -->
         <!-- === -->
         <!-- inicio - section servicios -->
-        <section id="servicios">
+        <main id="servicios">
             <div class="container-fluid">
-                <div class="row">
-                    <article class="col">
-                        <span class="fab fa-html5 text-primary"></span>
+                <div class="row ">
+                    <article class="col text-center py-3">
+                        <div class="circle"  >
+                            <span class="fab fa-html5 "></span>
+                        </div>
                         <h3>Modern Design</h3>
-                        <p>
+                        <p class="text-body-tertiary">
                             Imagination is more important than <br />knowledge. Knowledge is limited. <br />Imagination
                             encircles the world.
                         </p>
                     </article>
                     <article class="col">
-                        <span class="far fa-thumbs-up text-primary"></span>
+                        <div class="circle" ><span class="far fa-thumbs-up"></span></div>
                         <h3>High Quality</h3>
-                        <p>
+                        <p class="text-body-tertiary">
                             Imagination is more important than <br />
                             knowledge. Knowledge is limited. <br />
                             Imagination encircles the world.
                         </p>
                     </article>
                     <article class="col">
-                        <span class="fas fa-tablet-alt text-primary"></span>
+                        <div class="circle" ><span class="fas fa-tablet-alt"></span></div>
                         <h3>Ultra Resposive</h3>
-                        <p>
+                        <p class="text-body-tertiary">
                             Imagination is more important than <br />
                             knowledge. Knowledge is limited. <br />
                             Imagination encircles the world.
                         </p>
                     </article>
                     <article class="col">
-                        <span class="far fa-star text-primary"></span>
+                        <div class="circle" ><span class="far fa-star"></span></div>
                         <h3>Free Updates</h3>
-                        <p>
+                        <p class="text-body-tertiary">
                             Imagination is more important than <br />
                             knowledge. Knowledge is limited. <br />
                             Imagination encircles the world.
@@ -161,7 +172,7 @@
                 <img src="https://via.placeholder.com/500" alt="" width="150" />
                 <img src="https://via.placeholder.com/500" alt="" width="150" />
             </div>
-        </section>
+        </main>
         <!-- fin - section servicios -->
         <!-- === -->
         <!-- inicio - features parallax -->

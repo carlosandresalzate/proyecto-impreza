@@ -64,16 +64,19 @@ function SearchHandler() {
 }
 
 // Función para establecer la imagen de fondo
-function backgroundImage() {
-  const element = arguments[0];
-  const image = arguments[1] || "https://via.placeholder.com/1200x600";
-  const size = arguments[2] || "cover";
-  const position = arguments[3] || "center";
+function backgroundImage(element, options) {
+  const defaultOptions = {
+    image: "https://via.placeholder.com/1200x600",
+    size: "cover",
+    position: "center"
+  };
+
+  const mergedOptions = { ...defaultOptions, ...options };
 
   const background = {
-    image: image,
-    size: size,
-    position: position,
+    image: mergedOptions.image,
+    size: mergedOptions.size,
+    position: mergedOptions.position,
 
     setBackground() {
       element.style.backgroundImage = `url(${this.image})`;
@@ -85,6 +88,30 @@ function backgroundImage() {
   background.setBackground();
 }
 
+function customizeCircles(options) {
+  const defaultOptions = {
+    width: '100px',
+    height: '100px',
+    parentClases: ['text-center', 'py-3'],
+    circleClases: ['d-flex', 'justify-content-center', 'align-items-center', 'py-3'],
+    childClases: ['fs-2', 'text-primary', 'border', 'border-primary', 'rounded-circle', 'd-flex', 'justify-content-center', 'align-items-center']
+  };
+
+  const mergedOptions = {...defaultOptions, ...options};
+
+  const circles = document.querySelectorAll('.circle');
+
+  circles.forEach(circle => {
+    circle.firstElementChild.style.width = mergedOptions.width;
+    circle.firstElementChild.style.height = mergedOptions.height;
+
+    circle.parentNode.classList.add(...mergedOptions.parentClases);
+    circle.classList.add(...mergedOptions.circleClases);
+    circle.firstElementChild.classList.add(...mergedOptions.childClases);
+  });
+}
+
 // Llamadas a las funciones
 setupSearchHandler();
 setupBackgroundImage();
+customizeCircles();
