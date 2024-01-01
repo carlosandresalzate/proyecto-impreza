@@ -1,5 +1,6 @@
 console.log("Hola script!")
 import lowPolyBg from "../asset/low_poly_bg.jpg"
+
 // Función para la barra de búsqueda
 function setupSearchHandler() {
   const searchHandler = new SearchHandler();
@@ -10,7 +11,8 @@ function setupBackgroundImage() {
   const heroImg = document.getElementById('hero-img');
   const parallaxSection = document.getElementById('parallax-section');
   // configuracion para la imagen de fondo de la seccion heroImg
-  backgroundImage(heroImg);
+  const heroOptions = {}
+  backgroundImage(heroImg, heroOptions);
 
   // configuracion para la imagen de fondo de la seccion parallaxSection
   const parallaxOptions = {
@@ -78,7 +80,8 @@ function backgroundImage(element, options) {
   const defaultOptions = {
     image: "https://via.placeholder.com/1200x600",
     size: "cover",
-    position: "center"
+    position: "center",
+    attachment: "fixed"
   };
 
   const mergedOptions = { ...defaultOptions, ...options };
@@ -87,11 +90,13 @@ function backgroundImage(element, options) {
     image: mergedOptions.image,
     size: mergedOptions.size,
     position: mergedOptions.position,
+    attachment: mergedOptions.attachment,
 
     setBackground() {
       element.style.backgroundImage = `url(${this.image})`;
       element.style.backgroundSize = `${this.size}`;
       element.style.backgroundPosition = `${this.position}`;
+      element.style.backgroundAttachment = `${this.attachment}`;;
     }
   };
 
