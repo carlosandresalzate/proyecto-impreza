@@ -1,3 +1,5 @@
+console.log("Hola script!")
+import lowPolyBg from "../asset/low_poly_bg.jpg"
 // Función para la barra de búsqueda
 function setupSearchHandler() {
   const searchHandler = new SearchHandler();
@@ -6,7 +8,15 @@ function setupSearchHandler() {
 // Función para la imagen de fondo
 function setupBackgroundImage() {
   const heroImg = document.getElementById('hero-img');
+  const parallaxSection = document.getElementById('parallax-section');
+  // configuracion para la imagen de fondo de la seccion heroImg
   backgroundImage(heroImg);
+
+  // configuracion para la imagen de fondo de la seccion parallaxSection
+  const parallaxOptions = {
+    image: lowPolyBg
+  };
+  backgroundImage(parallaxSection, parallaxOptions);
 }
 
 // Objeto que maneja la barra de búsqueda
